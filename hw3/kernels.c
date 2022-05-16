@@ -4,7 +4,7 @@
 
 #include "defs.h"
 
-/* 
+/*
  * Please fill in the following team struct 
  */
 team_t team = {
@@ -38,6 +38,34 @@ void naive_rotate(int dim, pixel *src, pixel *dst)
 	    dst[RIDX(dim-1-j, i, dim)] = src[RIDX(i, j, dim)];
 }
 
+
+void rotate_16_5_after_shnaz_2(int dim, pixel *src, pixel *dst){
+    int i;
+    int dim_squared = dim * dim;
+    int src_index = -1, dst_index;
+    for (i = 0; i < dim; i++) {
+        dst_index = dim_squared + i;
+        while (dst_index >= dim) {
+            dst_index -= dim;
+            src_index++;
+            dst[dst_index] = src[src_index];
+        }
+    }
+}
+
+void rotate_16_5_after_shnaz(int dim, pixel *src, pixel *dst){
+    int i, j;
+    for (i = 0; i < dim; i++) {
+        int dst_index = dim * dim + i;
+        int src_index = i*dim-1;
+        for (j = 0; j < dim; j++) {
+            dst_index -= dim;
+            src_index++;
+            dst[dst_index] = src[src_index];
+        }
+    }
+}
+
 /* 
  * rotate - Your current working version of rotate
  * IMPORTANT: This is the version you will be graded on
@@ -47,6 +75,7 @@ void rotate(int dim, pixel *src, pixel *dst)
 {
     naive_rotate(dim, src, dst);
 }
+
 
 /*********************************************************************
  * register_rotate_functions - Register all of your different versions
@@ -59,7 +88,9 @@ void rotate(int dim, pixel *src, pixel *dst)
 void register_rotate_functions() 
 {
     add_rotate_function(&naive_rotate, naive_rotate_descr);   
-    add_rotate_function(&rotate, rotate_descr);   
+    add_rotate_function(&rotate, rotate_descr);
+    add_rotate_function(&rotate_16_5_after_shnaz, "16/5");
+    add_rotate_function(&rotate_16_5_after_shnaz_2, "16/5 version 2");
     /* ... Register additional test functions here */
 }
 
