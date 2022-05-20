@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: lab
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-release/
 # =============================================================================
 # Object build statements for EXECUTABLE target lab
 
@@ -49,33 +49,33 @@ cmake_ninja_workdir = C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cm
 
 build cmake_object_order_depends_target_lab: phony || CMakeFiles/lab.dir
 
-build CMakeFiles/lab.dir/driver.c.obj: C_COMPILER__lab_Debug C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/driver.c || cmake_object_order_depends_target_lab
+build CMakeFiles/lab.dir/driver.c.obj: C_COMPILER__lab_Release C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/driver.c || cmake_object_order_depends_target_lab
   DEP_FILE = CMakeFiles\lab.dir\driver.c.obj.d
-  FLAGS = -g -Wall -g -std=gnu11
+  FLAGS = -O3 -DNDEBUG -Wall -g -std=gnu11
   OBJECT_DIR = CMakeFiles\lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab.dir
   TARGET_COMPILE_PDB = CMakeFiles\lab.dir\
   TARGET_PDB = lab.pdb
 
-build CMakeFiles/lab.dir/clock_windows.c.obj: C_COMPILER__lab_Debug C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/clock_windows.c || cmake_object_order_depends_target_lab
+build CMakeFiles/lab.dir/clock_windows.c.obj: C_COMPILER__lab_Release C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/clock_windows.c || cmake_object_order_depends_target_lab
   DEP_FILE = CMakeFiles\lab.dir\clock_windows.c.obj.d
-  FLAGS = -g -Wall -g -std=gnu11
+  FLAGS = -O3 -DNDEBUG -Wall -g -std=gnu11
   OBJECT_DIR = CMakeFiles\lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab.dir
   TARGET_COMPILE_PDB = CMakeFiles\lab.dir\
   TARGET_PDB = lab.pdb
 
-build CMakeFiles/lab.dir/fcyc.c.obj: C_COMPILER__lab_Debug C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/fcyc.c || cmake_object_order_depends_target_lab
+build CMakeFiles/lab.dir/fcyc.c.obj: C_COMPILER__lab_Release C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/fcyc.c || cmake_object_order_depends_target_lab
   DEP_FILE = CMakeFiles\lab.dir\fcyc.c.obj.d
-  FLAGS = -g -Wall -g -std=gnu11
+  FLAGS = -O3 -DNDEBUG -Wall -g -std=gnu11
   OBJECT_DIR = CMakeFiles\lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab.dir
   TARGET_COMPILE_PDB = CMakeFiles\lab.dir\
   TARGET_PDB = lab.pdb
 
-build CMakeFiles/lab.dir/kernels.c.obj: C_COMPILER__lab_Debug C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/kernels.c || cmake_object_order_depends_target_lab
+build CMakeFiles/lab.dir/kernels.c.obj: C_COMPILER__lab_Release C$:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/kernels.c || cmake_object_order_depends_target_lab
   DEP_FILE = CMakeFiles\lab.dir\kernels.c.obj.d
-  FLAGS = -g -Wall -g -std=gnu11
+  FLAGS = -O3 -DNDEBUG -Wall -g -std=gnu11
   OBJECT_DIR = CMakeFiles\lab.dir
   OBJECT_FILE_DIR = CMakeFiles\lab.dir
   TARGET_COMPILE_PDB = CMakeFiles\lab.dir\
@@ -89,8 +89,8 @@ build CMakeFiles/lab.dir/kernels.c.obj: C_COMPILER__lab_Debug C$:/Users/gurgu/On
 #############################################
 # Link the executable lab.exe
 
-build lab.exe: C_EXECUTABLE_LINKER__lab_Debug CMakeFiles/lab.dir/driver.c.obj CMakeFiles/lab.dir/clock_windows.c.obj CMakeFiles/lab.dir/fcyc.c.obj CMakeFiles/lab.dir/kernels.c.obj
-  FLAGS = -g
+build lab.exe: C_EXECUTABLE_LINKER__lab_Release CMakeFiles/lab.dir/driver.c.obj CMakeFiles/lab.dir/clock_windows.c.obj CMakeFiles/lab.dir/fcyc.c.obj CMakeFiles/lab.dir/kernels.c.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab.dir
   POST_BUILD = cd .
@@ -105,7 +105,7 @@ build lab.exe: C_EXECUTABLE_LINKER__lab_Debug CMakeFiles/lab.dir/driver.c.obj CM
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-release && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -116,7 +116,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3 -BC:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-release && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3 -BC:\Users\gurgu\OneDrive\Documents\GitHub\HW3_IRGUN\hw3\cmake-build-release"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,7 +134,7 @@ build lab: phony lab.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-debug
+# Folder: C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-release
 
 build all: phony lab.exe
 

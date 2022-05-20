@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3/cmake-build-debug"
+			"value" : "c:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-release"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3"
+			"value" : "C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3/cmake-build-debug"
+			"value" : "C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-release"
 		},
 		{
 			"name" : "lab_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3"
+			"value" : "C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3"
 		}
 	],
 	"kind" : "cache",

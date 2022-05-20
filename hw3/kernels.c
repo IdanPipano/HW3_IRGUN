@@ -4,17 +4,17 @@
 
 #include "defs.h"
 
-/*
+/* 
  * Please fill in the following team struct 
  */
 team_t team = {
-    "עידן^גור",              /* Team name */
+    "beans--------",              /* Team name */
 
-    "Idan Pipano",     /* First member full name */
-    "idan.pipano@campus.technion.ac.il",  /* First member email address */
+    "Harry Potter",     /* First member full name */
+    "potter@nowhere.edu",  /* First member email address */
 
-    "Gur Keinan",                   /* Second member full name (leave blank if none) */
-    "Gur.Keinan@campus.technion.ac.il"                    /* Second member email addr (leave blank if none) */
+    "",                   /* Second member full name (leave blank if none) */
+    ""                    /* Second member email addr (leave blank if none) */
 };
 
 /***************
@@ -38,34 +38,6 @@ void naive_rotate(int dim, pixel *src, pixel *dst)
 	    dst[RIDX(dim-1-j, i, dim)] = src[RIDX(i, j, dim)];
 }
 
-
-void rotate_16_5_after_shnaz_2(int dim, pixel *src, pixel *dst){
-    int i;
-    int dim_squared = dim * dim;
-    int src_index = -1, dst_index;
-    for (i = 0; i < dim; i++) {
-        dst_index = dim_squared + i;
-        while (dst_index >= dim) {
-            dst_index -= dim;
-            src_index++;
-            dst[dst_index] = src[src_index];
-        }
-    }
-}
-
-void rotate_16_5_after_shnaz(int dim, pixel *src, pixel *dst){
-    int i, j;
-    for (i = 0; i < dim; i++) {
-        int dst_index = dim * dim + i;
-        int src_index = i*dim-1;
-        for (j = 0; j < dim; j++) {
-            dst_index -= dim;
-            src_index++;
-            dst[dst_index] = src[src_index];
-        }
-    }
-}
-
 /* 
  * rotate - Your current working version of rotate
  * IMPORTANT: This is the version you will be graded on
@@ -74,6 +46,79 @@ char rotate_descr[] = "rotate: Current working version";
 void rotate(int dim, pixel *src, pixel *dst) 
 {
     naive_rotate(dim, src, dst);
+}
+
+
+void rotate_version1(int dim, pixel *src, pixel *dst)
+{
+    register int i, j;
+    register int temp1 = 0;
+    register int dim_squared = dim*dim;
+    register int temp2;
+
+
+    for (i = 0; i < dim; i++)
+    {
+        temp2 = dim_squared - dim +i;
+        for (j = 0; j < dim; j++)
+        {
+            dst[temp2] = src[temp1];
+            temp2 -= dim;
+            temp1++;
+
+        }
+
+    }
+}
+
+
+void rotate_version2(int dim, pixel *src, pixel *dst)
+{
+    register int i, j=0;
+    register int temp1 = 0;
+    register int dim_squared = dim*dim;
+    register int temp2;
+
+
+    for (i = 0; i < dim; i++)
+    {
+        j+=dim;
+        temp2 = dim_squared - dim +i;
+        for (; temp1 < j; )
+        {
+            dst[temp2] = src[temp1];
+            temp2 -= dim;
+            temp1++;
+        }
+
+    }
+}
+
+
+
+void rotate_version3(int dim, pixel *src, pixel *dst)
+{
+    register int i, j;
+    register int dim_divide_by_2 = dim>>1;
+    register int dim_squared = dim*dim;
+    register int j_dim;
+    register int i_dim = -dim;
+    register int temp2;
+    for (i = 0; i < dim_divide_by_2; i++)
+    {
+        i_dim += dim;
+        temp2 = dim-i-1;
+        j_dim = 0-dim;
+        for (j = 0; j < temp2; j++)
+        {
+            j_dim += dim;
+            dst[i_dim+j] = src[j_dim+ dim-1-i];
+            dst[j_dim+ dim-i-1] = src[dim_squared-i_dim-1-j];
+            dst[dim_squared-i_dim-1-j] = src[dim_squared-dim-j_dim + i];
+            dst[dim_squared-dim-j_dim + i] = src[i_dim+ j];
+        }
+
+    }
 }
 
 
@@ -89,8 +134,10 @@ void register_rotate_functions()
 {
     add_rotate_function(&naive_rotate, naive_rotate_descr);   
     add_rotate_function(&rotate, rotate_descr);
-    add_rotate_function(&rotate_16_5_after_shnaz, "16/5");
-    add_rotate_function(&rotate_16_5_after_shnaz_2, "16/5 version 2");
+    add_rotate_function(&rotate_version1 , "works with about speedup = 2");
+    add_rotate_function(&rotate_version2 , "version2-- works with about speedup = 2");
+    add_rotate_function(&rotate_version3 , "version3");
+
     /* ... Register additional test functions here */
 }
 

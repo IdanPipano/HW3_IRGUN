@@ -1,3 +1,3 @@
-C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/lab.dir
-C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/pipan/OneDrive/מסמכים/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/lab.dir
+C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gurgu/OneDrive/Documents/GitHub/HW3_IRGUN/hw3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
