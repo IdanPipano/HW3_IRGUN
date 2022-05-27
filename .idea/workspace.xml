@@ -7,42 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f40b7b7c-e975-465a-8214-978c7e9755d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/README" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/clock.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/clock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/clock_windows.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/clock_windows.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.cmake/api/v1/reply/cache-v2-cf3e26689e76efcab7d9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-545d31e0bdeca26ebc6e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c9aa8f618a9733637934.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-16T06-54-02-0362.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-df920bcabcd39c32e9c8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/clock_windows.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/clock_windows.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/driver.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/driver.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/fcyc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/fcyc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/kernels.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/lab.dir/kernels.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/cmake-build-debug/lab.exe" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/cmake-build-debug/lab.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/defs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/driver.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/driver.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/fcyc.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/fcyc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/fcyc.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/fcyc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw3/kernels.c" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/kernels.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29QLg8jR2ONVaeKMAwY6K3Zfnth" />
   <component name="ProjectViewState">
@@ -78,6 +47,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653040471230</updated>
       <workItem from="1653040472386" duration="31000" />
+      <workItem from="1653057381882" duration="21000" />
+      <workItem from="1653063947150" duration="8000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 # ninja log v5
-26	230	6746963580523053	CMakeFiles/lab.dir/fcyc.c.obj	10bb28df694b7481
-22	285	6746963581124727	CMakeFiles/lab.dir/kernels.c.obj	608f5ef179e13f4e
-0	586	6746963584146398	CMakeFiles/lab.dir/clock_windows.c.obj	1d4154b8709843a6
-17	879	6746963587050990	CMakeFiles/lab.dir/driver.c.obj	d917284d998521ab
-880	1108	6746963589251665	lab.exe	4e9633145177c9d5
+18	457	6751928218757721	CMakeFiles/lab.dir/fcyc.c.obj	bceb0b0e9dd7442b
+2	420	6753013052592496	CMakeFiles/lab.dir/kernels.c.obj	8b9b6b0ebe274319
+15	844	6751928223121164	CMakeFiles/lab.dir/clock_windows.c.obj	13f599e7b18ef94f
+3	997	6751928224694206	CMakeFiles/lab.dir/driver.c.obj	e95dc8cbd3b5c591
+420	521	6753013053583738	lab.exe	4e9633145177c9d5
